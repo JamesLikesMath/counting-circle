@@ -22,12 +22,12 @@ int main(const int argc, char* argv[])
 	// Target integer parsing
 	try
 	{
-    target = std::stoi(targetStr);
+    		target = std::stoi(targetStr);
 		std::cout << target << '\n';
 	}
 	catch (const std::out_of_range& e)
 	{
-	    std::cerr << "Out of range: " << e.what() << '\n';
+		std::cerr << "Out of range: " << e.what() << '\n';
 		return 1;
 	}
 	catch (const std::invalid_argument& e)
