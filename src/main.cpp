@@ -1,10 +1,9 @@
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h" // Image library I found online
-#include "image_conversion.hpp"
+#include "../include/stb_image.h" // Image library I found online
+#include "../include/image_conversion.hpp"
 
 #include <stdexcept>
 #include <iostream>
-#include <limits>
 
 int main(const int argc, char* argv[]) 
 {
@@ -22,7 +21,7 @@ int main(const int argc, char* argv[])
 	// Target integer parsing
 	try
 	{
-    		target = std::stoi(targetStr);
+		target = std::stoi(targetStr);
 		std::cout << target << '\n';
 	}
 	catch (const std::out_of_range& e)
